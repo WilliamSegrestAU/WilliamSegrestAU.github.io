@@ -1,0 +1,29 @@
+/* Header Styling */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 8rem;
+}
+
+.header-logo {
+    margin-left: 8rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+/* About Me */

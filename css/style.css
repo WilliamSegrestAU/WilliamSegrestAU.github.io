@@ -1,7 +1,9 @@
 @import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
 
 :root {
-    --primary-color: #36454F;
+    --primary-color: #1c2227;
+    --secondary-color: #FFFFFF;
+    --alt-color: #2ecc71;
 }
 
 html {
@@ -10,12 +12,60 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: var(--primary-color);
     color: white;
-    margin: 0;
 }
 
-a{
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{ 
     text-decoration: none;
     color: white;
+}
+
+section {
+    width: 100%;
+}
+
+section h1 {
+    font-size: 6rem;
+}
+
+section h2 {
+    font-size: 3rem;
+}
+
+.custom-line {
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--alt-color), rgba(46, 204, 113, 0));
+    margin: 2rem auto; 
+}
+
+.custom-button {
+    background-color: transparent;
+    border: 2px solid var(--alt-color);
+    border-radius: 1.5rem;
+    color: var(--alt-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 60%;
+    padding: 1rem 2rem;
+    margin: 5rem;
+}
+
+.custom-button:hover {
+    background-color: var(--alt-color);
+    color: var(--secondary-color);
+    transform: scale(1.05);
 }

@@ -546,8 +546,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-@tailwind compponents;
-
 :root {
   --primary-color: #1c2227;
   --secondary-color: #FFFFFF;

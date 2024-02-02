@@ -1,4 +1,7 @@
 /* Header Styling */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 #header {
     display: flex;

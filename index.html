@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -7,47 +7,56 @@
 
     <title>William Segrest</title>
 </head>
-<body>
-    <header>
-        <div id="header">
-            <p class="header-logo"><a href="#landing">WS</a></p>
-            <nav class="header-nav">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div id="content">
-        <section id="landing" class="text-center">
-            <div class="landing-container mx-auto">
-                <h1 class="landing-header text-5xl font-bold text-gray-800">William Segrest</h1>
-                <div class="custom-line mt-2 w-16 h-1 bg-blue-500 mx-auto"></div>
-                <div class="landing-body mt-4">
-                    <h2 class="text-2xl text-gray-700">full-stack web developer</h2>
-                    <button class="custom-button mt-4 px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">RESUME</button>
-                </div>
+<body class="h-full">
+    <div class="h-full flex flex-col">
+        <header class="h-1/6">
+            <div id="header" class="flex items-center justify-between m-auto px-8 py-4">
+                <p class="header-logo text-4xl"><a href="#landing">WS</a></p>
+                <nav class="header-nav">
+                    <ul class="nav-links flex space-x-8 text-xl">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-        <section id="about">
+        </header>
+        <div id="content" class="h-5/6 items-center">
+            <section id="landing" class="text-center flex-1 h-full w-full flex items-center">
+                <div class="landing-container w-full h-full flex justify-center items-center flex-col">
+                    <h1 class="landing-header text-5xl font-bold">William Segrest</h1>
+                    <div class="custom-line mt-2 w-full h-1"></div>
+                    <div class="landing-body text-xl mt-4">
+                        <h2 class="">full-stack web developer</h2>
+                        <button class="custom-button mt-4 px-6 py-2">RESUME</button>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="text-center flex-1 h-screen w-full flex items-center">
+                <div class="landing-container w-full h-full flex justify-center align-middle flex-col bg-cyan-50">
+                    <h1 class="landing-header text-5xl font-bold">William Segrest</h1>
+                    <div class="custom-line mt-2 w-full h-1"></div>
+                    <div class="landing-body text-xl mt-4">
+                        <h2 class="">full-stack web developer</h2>
+                        <button class="custom-button mt-4 px-6 py-2">RESUME</button>
+                    </div>
+                </div>
+            </section>
+            <section id="skills">
 
-        </section>
-        <section id="skills">
+            </section>
+            <section id="experience">
 
-        </section>
-        <section id="experience">
+            </section>
+            <section id="contact">
 
-        </section>
-        <section id="contact">
+            </section>
+        </div>
+        <footer>
 
-        </section>
+        </footer>
     </div>
-    <footer>
-
-    </footer>
 </body>
 </html>
 

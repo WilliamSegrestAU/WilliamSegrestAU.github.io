@@ -4,19 +4,15 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #1c2227;
-    --secondary-color: #FFFFFF;
-    --alt-color: #2ecc71;
+    --primary-color: theme(colors.primary);
+    --primary-opacity: theme(colors.primary-opacity);
+    --secondary-color: theme(colors.secondary);
+    --alt-color: theme(colors.alt);
 }
 
 html {
     font-family: 'GothamPro', sans-serif;
     font-size: x-large;
-}
-
-body {
-    background-color: var(--primary-color);
-    color: white;
 }
 
 .custom-line {
@@ -33,14 +29,4 @@ body {
     background-color: var(--alt-color);
     color: var(--secondary-color);
     transform: scale(1.05);
-}
-
-@media only screen and (max-width: 864px) {
-    #menuIcon {
-        display: block;
-    }
-
-    #headerNav {
-        display: none;
-    }
 }

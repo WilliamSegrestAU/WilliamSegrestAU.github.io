@@ -13,21 +13,13 @@
 
     <title>William Segrest</title>
 </head>
-<body class="h-full">
+<body class="h-full text-white bg-primary">
     <div class="h-full flex flex-col">
-        <header class="fixed w-full z-50">
+        <header class="w-full z-50 fixed">
             <div id="header" class="flex items-center justify-end m-auto px-8 py-8">
-                <button id="menuIcon" class="text-white focus:outline-none hidden">
-                    <i class="fa-solid fa-bars text-2xl"></i>
+                <button id="menuIcon" class="focus:outline-none rounded-xl p-2 transition-colors duration-150 bg-primary-opacity hover:bg-white hover:text-primary">
+                    <i class="fa-solid fa-bars lg:text-4xl md:text-3xl sm:text-2xl text-xl"></i>
                 </button>
-                <nav id="headerNav">
-                    <ul class="nav-links flex space-x-8 lg:text-xl md:text-lg">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
         <div id="content" class="h-screen items-center">
@@ -41,9 +33,8 @@
                     </div>
                 </div>
             </section>
-            
             <section id="about" class="text-center flex-1 h-screen w-full flex items-center">
-                <div class="landing-container w-full h-full flex justify-center align-middle flex-col bg-cyan-50">
+                <div class="landing-container w-full h-full flex justify-center align-middle flex-col bg-gray-600">
                     <h1 class="landing-header text-5xl font-bold">William Segrest</h1>
                     <div class="custom-line mt-2 w-full h-1"></div>
                     <div class="landing-body text-xl mt-4">

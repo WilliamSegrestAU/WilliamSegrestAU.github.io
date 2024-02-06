@@ -13,36 +13,46 @@
 
     <title>William Segrest</title>
 </head>
-<body class="h-full text-white bg-primary">
+<body class="h-full text-secondary bg-primary">
     <div class="h-full flex flex-col">
         <header class="w-full z-50 fixed">
-            <div id="header" class="flex items-center justify-end m-auto px-8 py-8">
-                <button id="menuIcon" class="focus:outline-none rounded-xl p-2 transition-colors duration-150 bg-primary-opacity hover:bg-white hover:text-primary">
+            <div id="header" class="flex items-center justify-end m-auto px-4 py-4">
+                <button id="menuIcon" class="focus:outline-none rounded-xl p-2 transition-colors duration-150 bg-primary-opacity hover:bg-secondary hover:text-primary">
                     <i class="fa-solid fa-bars lg:text-4xl md:text-3xl sm:text-2xl text-xl"></i>
                 </button>
             </div>
         </header>
-        <div id="content" class="h-screen items-center">
+        <div id="content" class="h-full items-center">
             <section id="landing" class="text-center flex-1 h-full w-full flex items-center">
                 <div class="landing-container w-full h-full flex justify-center items-center flex-col">
                     <h1 class="landing-header xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold">William Segrest</h1>
-                    <div class="custom-line mt-2 mb-2 w-5/6 h-1"></div>
+                    <div class="custom-line my-2 mx-auto w-5/6 h-1"></div>
                     <div class="landing-body text-xl">
                         <h2 class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">full-stack web developer</h2>
                         <a href="" class="custom-button mt-12 px-12 py-1 rounded-xl text-xs md:text-sm lg:text-base inline-block">RESUME</a>
                     </div>
                 </div>
             </section>
-            <section id="about" class="text-center flex-1 h-screen w-full flex items-center">
-                <div class="landing-container w-full h-full flex justify-center align-middle flex-col bg-gray-600">
-                    <h1 class="landing-header text-5xl font-bold">William Segrest</h1>
-                    <div class="custom-line mt-2 w-full h-1"></div>
-                    <div class="landing-body text-xl mt-4">
-                        <h2 class="">full-stack web developer</h2>
-                        <button class="custom-button mt-4 px-6 py-2">RESUME</button>
+            <section id="about" class="text-center flex-1 h-full w-full flex items-center">
+                <div class="about-container w-full h-full flex flex-col bg-secondary p-8">
+                    <h1 class="about-header lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold mt-12 text-primary">About Me</h1>
+                    <div class="custom-line my-2 mx-auto w-5/6 h-1"></div>
+                    <div class="about-body flex flex-col items-center overflow-y-auto h-full">
+                        <!-- <div class="about-image-container">
+                            <img src="./images/WillSegrest_ProfilePic.jpg" alt="Profile Picture">
+                        </div> -->
+                        <div class="about-body-text md:w-3/4 my-4">
+                            <p class="md:text-xl sm:text-lg text-sm text-primary mb-4">
+                                As a Senior studying Computer Science at Auburn University, I'm deeply passionate about using technology to build innovative solutions that make a positive impact on people's lives. Currently, I'm gaining valuable experience in Full-Stack Web Development at Campus Web Solutions, where I'm honing my programming skills in languages like JavaScript, HTML/CSS, C#, and SQL while working in the .NET Framework.
+                            </p>
+                            <p class="md:text-xl sm:text-lg text-sm text-primary mb-4">
+                                My ultimate goal is to expand my expertise in software development and apply it to the creation of applications that truly make a difference. I strongly believe that technology has the potential to transform the way we live and work, and I'm committed to contributing to this exciting field. As a detail-oriented and collaborative individual, I'm constantly seeking opportunities to learn and grow as a professional.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
+            
             <section id="skills">
 
             </section>

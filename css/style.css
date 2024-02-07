@@ -30,3 +30,9 @@ html {
     color: var(--secondary-color);
     transform: scale(1.05);
 }
+
+@media only screen and (max-width: 1708px) {
+    .about-body-text > p:last-child {
+        display: none;
+    }
+}

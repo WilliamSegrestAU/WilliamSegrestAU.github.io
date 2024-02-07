@@ -15,7 +15,15 @@ html {
     font-size: x-large;
 }
 
-.custom-line {
+.custom-line-primary {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--primary-color), rgba(46, 204, 113, 0));
+}
+
+.custom-line-secondary {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--secondary-color), rgba(46, 204, 113, 0));
+}
+
+.custom-line-alt {
     background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--alt-color), rgba(46, 204, 113, 0));
 }
 

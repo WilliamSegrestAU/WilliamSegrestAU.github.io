@@ -12,7 +12,6 @@
 
 html {
     font-family: 'GothamPro', sans-serif;
-    font-size: x-large;
 }
 
 .custom-line-primary {
@@ -41,6 +40,12 @@ html {
 
 @media only screen and (max-width: 1708px) {
     .about-body-text > p:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .icon-text {
         display: none;
     }
 }

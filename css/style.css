@@ -38,14 +38,20 @@ html {
     transform: scale(1.05);
 }
 
-@media only screen and (max-width: 1708px) {
+/* @media only screen and (max-width: 1708px) {
     .about-body-text > p:last-child {
         display: none;
     }
-}
+} */
 
 @media only screen and (max-width: 330px) {
     .icon-text {
         display: none;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .skills-body {
+        overflow-y: auto;
     }
 }

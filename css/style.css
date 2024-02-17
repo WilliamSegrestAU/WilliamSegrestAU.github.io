@@ -50,8 +50,7 @@ html {
     }
 }
 
-@media screen and (orientation:landscape) {
-    .skills-body {
-        overflow-y: auto;
-    }
+/* Apply this CSS to each section */
+section {
+    min-height: 100vh;
 }

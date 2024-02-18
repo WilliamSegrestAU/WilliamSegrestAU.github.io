@@ -54,3 +54,37 @@ html {
 section {
     min-height: 100vh;
 }
+
+@media only screen and (max-width: 2000px) {
+    img.project-image {
+        height: 16rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1554px) {
+    img.project-image {
+        height: 12rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .project-info {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    img.project-image {
+        height: auto;
+        width: auto;
+    }
+}

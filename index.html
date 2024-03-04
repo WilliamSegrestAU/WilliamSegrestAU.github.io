@@ -7,7 +7,6 @@
     />
 
     <link rel="stylesheet" href="./dist/style.css">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -18,7 +17,7 @@
     <div class="h-full flex flex-col">
         <header class="w-full z-50 fixed">
             <div id="header" class="flex items-center justify-end m-auto px-4 py-4">
-                <button id="menuIcon" class="focus:outline-none rounded-xl p-2 transition-colors duration-150 bg-primary-opacity hover:bg-secondary hover:text-primary">
+                <button id="menuBtn" class="focus:outline-none rounded-xl p-2 transition-colors duration-150 bg-primary-opacity hover:bg-secondary hover:text-primary flex">
                     <i class="fa-solid fa-bars lg:text-4xl md:text-3xl sm:text-2xl text-xl"></i>
                 </button>
             </div>
@@ -167,6 +166,29 @@
 
             </section> -->
         </div>
+        <aside id="sideBar" class="w-3/5 fixed top-0 right-0 h-screen bg-primary text-secondary z-50 hidden">
+            <div class="h-full overflow-auto flex justify-center items-center">
+                <ul class="sidebar-content flex flex-col items-center">
+                    <li>
+                        <a href="#landing" class="block p-4 hover:bg-gray-700 transition-colors">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block p-4 hover:bg-gray-700 transition-colors">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="block p-4 hover:bg-gray-700 transition-colors">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="block p-4 hover:bg-gray-700 transition-colors">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block p-4 hover:bg-gray-700 transition-colors">Contact</a>
+                    </li>
+                    <!-- Add more items here -->
+                </ul>
+            </div>
+        </aside>
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
         <footer>
 
         </footer>
@@ -177,4 +199,28 @@
 <script src="./node_modules/aos/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    const menuBtn = document.getElementById('menuBtn');
+    const menuIcon = document.querySelector('#menuBtn > i');
+    const sideBar = document.getElementById('sideBar');
+    const sideBarContent = document.querySelector('#sideBar > div:first-child')
+    const overlay = document.getElementById('overlay');
+
+    document.addEventListener('click', function (e) {
+        const targetElement = e.target; // clicked element
+
+        if (!sideBar.classList.contains('hidden')) {
+            if (targetElement !== sideBarContent) {
+                toggleSideBar();
+            }
+        }
+        else if (sideBar.classList.contains('hidden') && (e.target == menuBtn || e.target == menuIcon)) {
+            toggleSideBar();
+        }
+    });
+
+    const toggleSideBar = () => {
+        sideBar.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+    }
 </script>

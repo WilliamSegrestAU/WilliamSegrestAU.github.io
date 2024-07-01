@@ -88,3 +88,9 @@ section {
         width: auto;
     }
 }
+
+/* Footer CSS */
+
+.footer-container  a  i {
+    color: var(--primary-color)
+}

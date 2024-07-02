@@ -101,6 +101,22 @@ div#landingFooter  i {
     color: var(--secondary-color)
 }
 
+/* Skills and Technologies Links */
+.skill-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.skill-link:hover .icon-container i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-link .icon-container i {
+    transition: transform 0.3s ease;
+}
+
 /* Footer CSS */
 
 .footer-container  a  i {

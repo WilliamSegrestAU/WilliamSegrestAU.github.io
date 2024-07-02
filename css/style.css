@@ -108,17 +108,20 @@ div#landingFooter  i {
     transition: transform 0.3s ease;
 }
 
-.skill-link:hover .icon-container i {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-
-.skill-link .icon-container i {
-    transition: transform 0.3s ease;
-}
-
 /* Footer CSS */
 
 .footer-container  a  i {
     color: var(--primary-color)
+}
+
+
+.skill-link:hover .icon-container i,
+.footer-link:hover  i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-link .icon-container i,
+.footer-link  i  {
+    transition: transform 0.3s ease;
 }

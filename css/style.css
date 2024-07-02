@@ -89,6 +89,18 @@ section {
     }
 }
 
+/* Dynamic Landing Scroll Arrow */
+
+@media (max-height: 100vh) {
+    html:not([data-scroll= '0']) #landingFooter {
+        opacity: 0;
+    }
+}
+
+div#landingFooter  i {
+    color: var(--secondary-color)
+}
+
 /* Footer CSS */
 
 .footer-container  a  i {

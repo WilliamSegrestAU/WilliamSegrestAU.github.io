@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full xl:text-2xl lg:text-xl text-base">
+<html lang="en" class="h-full xl:text-2xl lg:text-xl text-base" data-scroll="0">
 <head>
     <meta
         name="viewport"
@@ -25,15 +25,15 @@
         <div id="content" class="items-center">
             <section id="landing" class="text-center flex-1 w-full flex items-center bg-primary">
                 <div class="landing-container w-full h-full flex justify-center items-center flex-col">
-                    <h1 class="landing-header text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">William Segrest</h1>
-                    <div class="custom-line-alt my-2 mx-auto w-5/6 h-1"></div>
+                    <h1 class="landing-header text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold" data-aos="fade-down">William Segrest</h1>
+                    <div class="custom-line-alt my-2 mx-auto w-5/6 h-1" data-aos="zoom-in" data-aos-delay="200"></div>
                     <div class="landing-body text-xl">
-                        <h2 class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base">full-stack web developer</h2>
-                        <div class="landing-action-btns">
+                        <h2 class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base" data-aos="fade-up" data-aos-delay="500">full-stack web developer</h2>
+                        <div class="landing-action-btns" data-aos="fade-up" data-aos-delay="800">
                             <a href="" class="custom-button mt-12 px-12 py-1 rounded-xl text-xs md:text-sm lg:text-base inline-block">RESUME</a>
                         </div>
                     </div>
-                    <div id="landingFooter" class="w-full fixed bottom-0 left-0 flex justify-center pb-8 transition-opacity duration-400">
+                    <div id="landingFooter" class="w-full fixed bottom-0 left-0 flex justify-center pb-8 transition-opacity duration-200 opacity-0">
                         <i class="fa-solid fa-angles-down text-3xl animate-bounce"></i>
                     </div>
                 </div>
@@ -213,8 +213,6 @@
 
 <script src="./node_modules/aos/dist/aos.js"></script>
 <script>
-    AOS.init();
-
     const menuBtn = document.getElementById('menuBtn');
     const menuIcon = document.querySelector('#menuBtn > i');
     const sideBar = document.getElementById('sideBar');
@@ -223,17 +221,20 @@
     const landingFooter = document.getElementById('landingFooter');
 
     document.addEventListener('DOMContentLoaded', function (e) {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        setTimeout(() => {
+            landingFooter.classList.remove('opacity-0')
+        }, 1500);
+
         // displays double down arrow on landing page according to window offset
         window.addEventListener('scroll', () => {
-            const currScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currScroll !== 0) {
-                landingFooter.classList.add('opacity-0');
-            }
-            else {
-                landingFooter.classList.remove('opacity-0');
-            }
-        });
+                const currScroll = window.pageYOffset || document.documentElement.scrollTop;
+                document.documentElement.setAttribute('data-scroll', currScroll);
+        }, { passive: true });
     });
 
     document.addEventListener('click', function (e) {

@@ -33,6 +33,9 @@
                             <a href="" class="custom-button mt-12 px-12 py-1 rounded-xl text-xs md:text-sm lg:text-base inline-block">RESUME</a>
                         </div>
                     </div>
+                    <div id="landingFooter" class="w-full fixed bottom-0 left-0 flex justify-center pb-8 transition-opacity duration-400">
+                        <i class="fa-solid fa-angles-down text-3xl animate-bounce"></i>
+                    </div>
                 </div>
             </section>
             <section id="about" class="flex flex-1 items-center justify-center w-full bg-secondary">
@@ -217,6 +220,21 @@
     const sideBar = document.getElementById('sideBar');
     const sideBarContent = document.querySelector('#sideBar > div:first-child')
     const overlay = document.getElementById('overlay');
+    const landingFooter = document.getElementById('landingFooter');
+
+    document.addEventListener('DOMContentLoaded', function (e) {
+        // displays double down arrow on landing page according to window offset
+        window.addEventListener('scroll', () => {
+            const currScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currScroll !== 0) {
+                landingFooter.classList.add('opacity-0');
+            }
+            else {
+                landingFooter.classList.remove('opacity-0');
+            }
+        });
+    });
 
     document.addEventListener('click', function (e) {
         const targetElement = e.target; // clicked element

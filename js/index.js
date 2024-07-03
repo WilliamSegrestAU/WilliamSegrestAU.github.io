@@ -7,12 +7,12 @@ const landingFooter = document.getElementById('landingFooter');
 
 document.addEventListener('DOMContentLoaded', function (e) {
     AOS.init({
-        duration: 800
+        duration: 1200
     });
 
     setTimeout(() => {
         landingFooter.classList.remove('opacity-0')
-    }, 1500);
+    }, 2000);
 
     // displays double down arrow on landing page according to window offset
     window.addEventListener('scroll', () => {

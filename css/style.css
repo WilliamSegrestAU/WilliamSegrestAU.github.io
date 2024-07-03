@@ -121,12 +121,12 @@ section {
 
 
 .skill-link:hover .icon-container i,
-.footer-link:hover  i {
+.social-link:hover  i {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
 .skill-link .icon-container i,
-.footer-link  i  {
+.social-link  i  {
     transition: transform 0.3s ease;
 }

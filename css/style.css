@@ -130,3 +130,7 @@ section {
 .social-link  i  {
     transition: transform 0.3s ease;
 }
+
+#background-canvas {
+    pointer-events: none;
+}

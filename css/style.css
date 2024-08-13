@@ -99,10 +99,22 @@ section {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     img.project-image {
         height: auto;
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .project-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .project-info {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 }
 

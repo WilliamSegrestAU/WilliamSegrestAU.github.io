@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full xl:text-2xl lg:text-xl text-base" data-scroll="0">
+<head>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <title>William Segrest</title>
+</head>
+<body class="h-full text-secondary bg-primary">
+    <div class="h-full flex flex-col">
+        <div id="content" class="items-center">
+            <section id="landing" class="text-center flex-1 w-full flex items-center bg-primary">
+                <canvas id="background-canvas" class="absolute top-0 left-0 w-full h-full"></canvas>
+                <div class="landing-container w-full h-full flex justify-center items-center flex-col">
+                    <h1 class="landing-header text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold" data-aos="fade-down" data-aos-once="true">William Segrest</h1>
+                    <div class="custom-line-alt my-2 mx-auto w-5/6 h-1" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true"></div>
+                    <div class="landing-body text-xl">
+                        <h2 class="xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">full-stack developer</h2>
+                        <div class="landing-action-btns mt-8" data-aos="fade-up" data-aos-delay="800" data-aos-once="true">
+                            <a href="./content/files/William Segrest - Resume.pdf" class="custom-button px-12 py-1 rounded-xl text-xs md:text-sm lg:text-base inline-block" target="_blank">RESUME</a>
+                        </div>
+                        <div class="social-links mt-4 flex justify-center items-center gap-8" data-aos="fade-up" data-aos-delay="1100" data-aos-once="true">
+                            <a href="https://github.com/WilliamSegrestAU" class="social-link" target="_blank">
+                                <i class="fa-brands fa-github text-2xl md:text-3xl color-secondary"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/williamsegrest/" class="social-link" target="_blank">
+                                <i class="fa-brands fa-linkedin text-2xl md:text-3xl color-secondary"></i>
+                            </a>
+                            <a href="mailto:wbs0026@auburn.edu" class="social-link" target="_blank">
+                                <i class="fa-solid fa-envelope text-2xl md:text-3xl color-secondary"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="landingFooter" class="w-full fixed bottom-0 left-0 flex justify-center pb-8 transition-opacity duration-200 opacity-0">
+                        <i class="fa-solid fa-angles-down text-3xl animate-bounce color-secondary"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="flex flex-1 items-center justify-center w-full bg-secondary">
+                <div class="p-8 w-full h-full" data-aos="fade-up">
+                    <div class="about-container flex flex-col gap-8 justify-center h-full">
+                        <div class="about-header">
+                            <div class="text-center">
+                                <h1 class="font-bold mt-6 text-primary text-3xl md:text-4xl lg:text-5xl">About Me</h1>
+                                <div class="custom-line-alt my-2 mx-auto w-5/6 h-1"></div>
+                            </div>
+                        </div>
+                        <div class="about-body-text w-full md:w-4/6 my-4 mx-auto flex flex-col overflow-y-auto text-left">                          
+                            <p class="text-xs text-primary sm:text-md md:text-lg lg:text-xl mb-6">
+                                Hello, my name is William Segrest! As a Senior studying Computer Science at Auburn University, I'm deeply passionate about using technology to build innovative solutions that make a positive impact on people's lives.
+                            </p>
+                            <p class="text-xs text-primary sm:text-md md:text-lg lg:text-xl">
+                                I strongly believe that technology has the potential to transform the way we live and work, and I'm committed to contributing to this exciting field. As a detail-oriented and collaborative individual, I'm constantly seeking opportunities to learn and grow as a professional.                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>           
+            <section id="skills" class="flex flex-1 items-center justify-center w-full bg-primary">
+                <div class="w-full h-full p-8">
+                    <div class="skills-container flex flex-col items-center justify-center gap-4 xl:gap-12 h-full w-full" data-aos="fade-up">
+                        <div class="skills-header w-full">
+                            <div class="text-center">
+                                <h1 class="font-bold text-secondary text-3xl md:text-4xl lg:text-5xl mt-6">Skills & Technologies</h1>
+                                <div class="custom-line-secondary my-2 mx-auto w-5/6 h-1"></div>
+                                <p class="text-xs text-secondary text-left sm:text-center sm:block sm:text-md md:text-lg lg:text-xl md:w-5/6 mx-auto my-4">
+                                    Currently, I am gaining valuable experience in Full-Stack Web Development at Campus Web Solutions, where I am expanding and advancing my 
+                                    programming skills across a range of technologies within the ASP.NET framework.                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-body w-full mb-6" data-aos="zoom-in">
+                            <div class="grid grid-cols-3 md:grid-cols-4 gap-12 md:gap-14 xl:gap-16 text-center">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-html5-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">HTML5</div>
+                                    </div>
+                                </a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-css3-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">CSS</div>
+                                    </div>
+                                </a>
+                                <a href="https://getbootstrap.com/" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-bootstrap-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">Bootstrap</div>
+                                    </div>
+                                </a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-javascript-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">JavaScript</div>
+                                    </div>
+                                </a>
+                                <a href="https://jquery.com/" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-jquery-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">jQuery</div>
+                                    </div>
+                                </a>
+                                <a href="https://dotnet.microsoft.com/en-us/languages/csharp" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-csharp-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">C#</div>
+                                    </div>
+                                </a>
+                                <a href="https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-azuresqldatabase-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">SQL</div>
+                                    </div>
+                                </a>
+                                <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-dotnetcore-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">ASP.NET</div>
+                                    </div>
+                                </a>
+                                <a href="https://git-scm.com/doc" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-git-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">Git</div>
+                                    </div>
+                                </a>
+                                <a href="https://www.github.com" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-github-original text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">GitHub</div>
+                                    </div>
+                                </a>
+                                <a href="https://www.atlassian.com/software/jira" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-jira-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">Jira</div>
+                                    </div>
+                                </a>
+                                <a href="https://www.python.org/doc/versions/" class="skill-link" target="_blank">
+                                    <div class="icon-container flex flex-col items-center">
+                                        <i class="devicon-python-plain text-3xl md:text-4xl xl:text-5xl"></i>
+                                        <div class="icon-text text-xs md:text-base xl:test-lg mt-2">Python</div>
+                                    </div>
+                                </a>                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="text-center flex-1 w-full flex bg-primary">
+                <div class="w-full h-full p-8">
+                    <div class="projects-container flex flex-col items-center gap-4 xl:gap-12 h-full w-full">
+                        <div class="projects-header w-full" data-aos="fade-up">
+                            <div class="text-center">
+                                <h1 class="font-bold mt-6 text-secondary text-3xl md:text-4xl lg:text-5xl">Featured Projects</h1>
+                                <div class="custom-line-secondary my-2 mx-auto w-5/6 h-1"></div>
+                            </div>
+                        </div>
+                        <div class="projects-body w-full sm:w-5/6 flex flex-col gap-20 lg:gap-24 xl:gap-28 mt-4" data-aos="fade-right">
+                            <div class="project flex flex-col lg:flex-row justify-evenly gap-4 md:gap-8">
+                                <img src="./content/images/CEPS/CEPS_EmailHub.png" class="project-image object-scale-down h-96 w-auto border-8 border-secondary">
+                                <div class="project-description text-left">
+                                    <div class="project-title text-3xl font-bold mb-4 color-alt">CEPS</div>
+                                    <div class="project-info text-lg space-y-2 xl:space-y-4">
+                                        <p>Designed a comprehensive automated email system for Auburn University's Campus Event Planning System (CEPS).</p>
+                                        <p>CEPS is widely used throughout campus to submit event requests for events happening on campus.</p>
+                                        <p>This email system streamlines communication with committee members, event submitters, and non-submitters through automated
+                                        emails triggered by over 15 different event scenarios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project flex flex-col lg:flex-row-reverse justify-evenly gap-4 md:gap-8" data-aos="fade-left">
+                                <!-- Wait until merged -->
+                                <img src="./content/images/Event Ticketing/DataTable.png" class="project-image object-scale-down h-96 w-auto border-8 border-secondary">
+                                <div class="project-description text-left">
+                                    <div class="project-title text-3xl font-bold mb-4 color-alt">Event Ticketing</div>
+                                    <div class="project-info text-lg space-y-2 xl:space-y-4">
+                                        <p>Developed a solution to preserve Bootstrap's Datatable state (pagination, search, order) and custom filter configurations for university event ticketing administrators.</p>
+                                        <p>Allows admins to maintain their preferred view and query results even after refreshing the page.</p>
+                                        <p>Implemented opt-in persistence for both datatable settings and custom filters, enhancing usability and workflow efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project flex flex-col lg:flex-row justify-evenly gap-4 md:gap-8" data-aos="fade-right">
+                                <!-- Wait until merged -->
+                                <img src="./content/images/Masterpage/GEDI.png" class="project-image object-scale-down h-96 w-auto border-8 border-secondary">
+                                <div class="project-description text-left">
+                                    <div class="project-title text-3xl font-bold mb-4 color-alt">Masterpage Upgrades</div>
+                                    <div class="project-info text-lg space-y-2 xl:space-y-4">
+                                        <p>Led the upgrade and implementation of masterpages for major projects including OIT Account Information and GEDI (Government & Economic Development Institute), now live in production.</p>
+                                        <p>Additonally, contributed to the development of updated masterpage brand versions, improving the maintainability and scalability of our web applications.</p>
+                                        <p>These masterpages serve as essential templates for that "Auburn University" feel, providing the foundational HTML structure, CSS styles, and UI elements for entire sites.</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./node_modules/aos/dist/aos.js"></script>
+<script src="./js/index.js"></script>

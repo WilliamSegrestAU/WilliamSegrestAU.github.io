@@ -1,0 +1,153 @@
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: theme(colors.primary);
+    --primary-opacity: theme(colors.primary-opacity);
+    --secondary-color: theme(colors.secondary);
+    --alt-color: theme(colors.alt);
+}
+
+html {
+    font-family: 'GothamPro', sans-serif;
+}
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.color-secondary {
+    color: var(--secondary-color);
+}
+
+.color-alt {
+    color: var(--alt-color);
+}
+
+.custom-line-primary {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--primary-color), rgba(46, 204, 113, 0));
+}
+
+.custom-line-secondary {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--secondary-color), rgba(46, 204, 113, 0));
+}
+
+.custom-line-alt {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0), var(--alt-color), rgba(46, 204, 113, 0));
+}
+
+.custom-button {
+    border: 2px solid var(--alt-color);
+    color: var(--alt-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: var(--alt-color);
+    color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* @media only screen and (max-width: 1708px) {
+    .about-body-text > p:last-child {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 330px) {
+    .icon-text {
+        display: none;
+    }
+}
+
+/* Apply this CSS to each section */
+section {
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 2000px) {
+    img.project-image {
+        height: 16rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .project-info {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1554px) {
+    img.project-image {
+        height: 14rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .project-info {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    img.project-image {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .project-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .project-info {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+/* Dynamic Landing Scroll Arrow */
+
+@media (max-height: 100vh) {
+    html:not([data-scroll= '0']) #landingFooter {
+        opacity: 0;
+    }
+}
+
+.skill-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.icon-container > i {
+    color: var(--alt-color)
+}
+
+
+.skill-link:hover .icon-container i,
+.social-link:hover  i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-link .icon-container i,
+.social-link  i  {
+    transition: transform 0.3s ease;
+}
+
+#background-canvas {
+    pointer-events: none;
+}

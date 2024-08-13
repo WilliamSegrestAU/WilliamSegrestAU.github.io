@@ -76,11 +76,16 @@ section {
         font-size: 1.5rem;
         line-height: 2rem;
     }
+
+    .project-info {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
 }
 
 @media only screen and (max-width: 1554px) {
     img.project-image {
-        height: 12rem;
+        height: 14rem;
     }
 
     .project-title {

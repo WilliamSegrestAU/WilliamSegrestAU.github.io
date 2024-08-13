@@ -19,3 +19,4 @@ To ensure that your styling changes in HTML or CSS work properly with Tailwind, 
 Tailwind CSS needs to process your CSS file to include only the classes you're actually using in your HTML. This command ensures that your final stylesheet is always up-to-date with your latest changes.
 
 If you forget to run this command, your styling changes may not appear on the website.
+

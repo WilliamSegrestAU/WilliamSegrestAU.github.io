@@ -10,7 +10,7 @@ To ensure that your styling changes in HTML or CSS work properly with Tailwind, 
 
 2. Open your terminal.
 
-3. Run ```npm run build:style```
+3. Run ```npm run build:style``` (look at ```build:style``` script defined in ```package.json``` file)
 
 4. Keep this command running while you're working on the site. It will automatically update ```./dist/style.css``` whenever you make changes.
 

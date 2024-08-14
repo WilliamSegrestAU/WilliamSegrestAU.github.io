@@ -1,4 +1,4 @@
-# williamsegrest.dev
+# williamsegrest.com
 
 This repository contains the source code for William Segrest's personal website.
 
